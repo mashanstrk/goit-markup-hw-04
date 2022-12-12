@@ -123,7 +123,8 @@ img {
 }
 
 .contacts-link {
-  display: block;
+  display: flex;
+  align-items: center;
   padding-top: 32px;
   padding-bottom: 32px;
 
@@ -141,15 +142,15 @@ img {
 
 .contacts-icon {
   margin-right: 10px;
-}
-
-.contacts-icon:hover {
-  fill: var(--effect-textcolor);
+  fill: var(--main-textcolor);
 }
 
 .hero {
+  max-width: 1600px;
+  margin-right: auto;
+  margin-left: auto;
   padding: 200px;
-  background-color: var(--secondary-bcg-color);
+  background-color: #c4c4c4;
   background-image: linear-gradient(
       to right,
       rgba(47, 48, 58, 0.4),
@@ -158,9 +159,8 @@ img {
     url(../images/hero-bcg.jpg);
   background-repeat: no-repeat;
   background-position: center;
-  background-size: 1600px;
+  background-size: cover;
   text-align: center;
-  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
 }
 
 .hero-title {
@@ -312,6 +312,7 @@ img {
 
 .team-card {
   padding-top: 30px;
+  padding-bottom: 30px;
 }
 
 .team-social {
@@ -344,7 +345,6 @@ img {
   display: flex;
   justify-content: center;
   margin-top: 16px;
-  padding-bottom: 30px;
   gap: 10px;
 }
 
@@ -488,7 +488,8 @@ img {
   fill: var(--background-color);
 }
 
-.follow-link:hover {
+.follow-link:hover,
+.follow-link:focus {
   background-color: var(--effect-textcolor);
 }
 
@@ -565,8 +566,14 @@ img {
   margin-bottom: 0px;
 }
 
-.examples-item:hover {
-  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+.examples-link {
+  display: block;
+}
+
+.examples-link:hover,
+.examples-link:focus {
+  box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
+    1px 4px 6px rgba(0, 0, 0, 0.16);
 }
 
 .company {
